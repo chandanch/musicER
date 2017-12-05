@@ -10,7 +10,7 @@ import { DefaultComponent } from './default/default.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent, pathMatch: "full"},
-  {path: 'search', component: SearchComponent},
+  {path: 'search/:term', component: SearchComponent},
   {path: 'find', redirectTo: 'search'},
   {path: 'home', redirectTo: ''},
   {path: '**', component: DefaultComponent}
