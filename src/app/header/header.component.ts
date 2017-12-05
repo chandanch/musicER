@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
 
   search() {
     console.log('routingf');
-    this.router.navigate(['search']);
+    this.router.navigate(['search', {term: this.searchTerm, sr: 'dd'}]);
   }
 
   home() {
